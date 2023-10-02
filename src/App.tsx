@@ -28,6 +28,7 @@ function App() {
   }, []);
 
   return !data || !profileData ? null : (
+     // return (
     <div className="flex flex-col flex-1 w-full h-screen">
       <Sidebar />
       <div className="w-full pl-[100px]">
