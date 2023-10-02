@@ -8,8 +8,14 @@ type Props = { label: string; data: any };
 
 export function Input(props: Props) {
   const { label, data } = props;
-  const [on, setOn] = useState(false);
-  const [internal, setInternal] = useState(false);
+  const [on, setOn] = useState(data ? data.show : false);
+  const [internal, setInternal] = useState(
+    !data
+      ? false
+      : label === "Education" || label === "Experience" || label === "Resume"
+      ? data.mandatory
+      : data.internalUse
+  );
 
   return (
     <div
@@ -29,7 +35,7 @@ export function Input(props: Props) {
         <div className="flex items-center justify-between w-[55%]">
           <div className="flex items-center">
             <img
-              onClick={() => setInternal(!internal)}
+              onClick={() => setInternal(internal)}
               src={internal ? checked : unchecked}
               alt="internal"
               className="h-[18px] w-[18px]"

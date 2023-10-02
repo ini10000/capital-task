@@ -10,7 +10,6 @@ import Questions from "./components/Questions";
 
 const cancel = require("./assets/images/delete.png");
 const edit = require("./assets/images/edit.png");
-const plus = require("./assets/images/plus.png");
 const unorderedList = require("./assets/images/unorderedList.png");
 function App() {
   const [data, setData] = useState<info>();
@@ -26,7 +25,6 @@ function App() {
     };
 
     getApiData();
-    // console.log(data["firstName"].show);
   }, []);
 
   return !data || !profileData ? null : (
@@ -142,7 +140,7 @@ function App() {
                 className={`flex justify-between items-center pb-4 mt-2 border-b border-b-[#C4C4C4]`}
               >
                 <p className="font-['Poppins'] text-xl font-semibold w-[90%] mr-4">
-                  Have yu ever been rejected by the UK Embassy?
+                  Have you ever been rejected by the UK Embassy?
                 </p>
                 <div className="flex items-center justify-end ">
                   <img
@@ -152,18 +150,6 @@ function App() {
                   />
                 </div>
               </div>
-            </div>
-            <div
-              className="flex w-full mt-16 mb-12 cursor-pointer"
-              onClick={() =>
-                // @ts-ignore: Object is possibly 'null'
-                setQuestions(questions.length > 0 ? [...questions, ""] : [""])
-              }
-            >
-              <img className="h-6 w-6" src={plus} alt="plus" />
-              <p className="text-sm font-['Poppins'] font-semibold ml-5">
-                Add a question
-              </p>
             </div>
           </SectionContainer>
         </div>
