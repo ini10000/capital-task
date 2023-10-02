@@ -17,6 +17,11 @@ interface details {
   internalUse: boolean;
 }
 
+interface profileDetails {
+  show: boolean;
+  mandatory: boolean;
+}
+
 interface info {
   firstName: details;
   lastName: details;
@@ -27,6 +32,23 @@ interface info {
   idNumber: details;
   dateOfBirth: details;
   gender: details;
+  personalQuestions?: [
+    {
+      id: string;
+      type: string;
+      question: string;
+      choices: string[];
+      maxChoice: number;
+      disqualify: boolean;
+      other: boolean;
+    }
+  ];
+}
+
+interface profileInfo {
+  experience: profileDetails;
+  education: profileDetails;
+  resume: profileDetails;
   // personalQuestions: [
   //   {
   //     id: string;
@@ -72,4 +94,4 @@ let profile: userInfo[] = [
 ];
 
 export { headers, menuItems, personalInfo, profile };
-export type { info, details };
+export type { info, details, profileInfo, profileDetails };

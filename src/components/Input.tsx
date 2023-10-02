@@ -1,11 +1,10 @@
 import { useState } from "react";
 import Switch from "react-switch";
-import { details } from "../data/constants";
 
 const checked = require("../assets/images/checked.png");
 const unchecked = require("../assets/images/unchecked.png");
 
-type Props = { label: string; data: details };
+type Props = { label: string; data: any };
 
 export function Input(props: Props) {
   const { label, data } = props;
