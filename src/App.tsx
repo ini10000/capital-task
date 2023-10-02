@@ -10,6 +10,7 @@ import Questions from "./components/Questions";
 
 const cancel = require("./assets/images/delete.png");
 const edit = require("./assets/images/edit.png");
+const plus = require("./assets/images/plus.png");
 const unorderedList = require("./assets/images/unorderedList.png");
 function App() {
   const [data, setData] = useState<info>();
@@ -152,7 +153,18 @@ function App() {
                 </div>
               </div>
             </div>
-            <Questions />
+            <div
+              className="flex w-full mt-16 mb-12 cursor-pointer"
+              onClick={() =>
+                // @ts-ignore: Object is possibly 'null'
+                setQuestions(questions.length > 0 ? [...questions, ""] : [""])
+              }
+            >
+              <img className="h-6 w-6" src={plus} alt="plus" />
+              <p className="text-sm font-['Poppins'] font-semibold ml-5">
+                Add a question
+              </p>
+            </div>
           </SectionContainer>
         </div>
       </div>
