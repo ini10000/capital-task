@@ -1,9 +1,9 @@
 // Import the React library.
-import React from 'react';
+import React from "react";
 
 // Import the Sidebar and ApplicationForm components.
-import Sidebar from './Components/Sidebar';
-import ApplicationForm from './AppForm/ApplicationForm';
+import Sidebar from "./components/Sidebar";
+import ApplicationForm from "./AppForm/ApplicationForm";
 
 // Define the App function component.
 function App() {

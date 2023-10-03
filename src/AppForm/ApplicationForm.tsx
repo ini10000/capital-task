@@ -4,7 +4,7 @@ import Breadcrumb from "./Breadcrumb";
 import Info from "./Info";
 import Profile from "./Profile";
 import ExtraQues from "./ExtraQues";
-import AddImage from "../Components/AddImage";
+import AddImage from "../components/AddImage";
 import { IApplicationForm } from "../utils/interface";
 import { personalInfoTemplate, profileTemplate } from "../utils/data";
 import { v4 as uuidv4 } from "uuid";
