@@ -9,11 +9,11 @@
 
   <p align="center">
     <br />
-    <a href="https://github.com/ini10000/capital_placement_ui_api_task-1"><strong>Explore the project »</strong></a>
+    <a href="https://github.com/ini10000/capital-task"><strong>Explore the project »</strong></a>
     <br />
     .
     ·
-    <a href="https://github.com/ini10000/capital_placement_ui_api_task-1/issues">Request Feature</a>
+    <a href="https://github.com/ini10000/capital-task/issues">Request Feature</a>
   </p>
 </div>
 
