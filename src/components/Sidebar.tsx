@@ -66,7 +66,7 @@ const Sidebar = () => {
         {/* User Profile Section */}
         <div className="py-10 flex justify-center items-center">
           <div className="rounded-full bg-blue-500 text-white w-8 h-8  sm:w-12 sm:h-12  flex justify-center items-center">
-            VK {/* Placeholder for user's initials or profile picture */}
+            AS {/* Placeholder for user's initials or profile picture */}
           </div>
         </div>
       </div>
